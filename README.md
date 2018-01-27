@@ -1,4 +1,4 @@
-# a simple blockchain sample in .Net
+# a simple blockchain sample in C# for .Net
 A simple blockchain example in c# using SHA512 for hashing.
 
 This lib  can:
