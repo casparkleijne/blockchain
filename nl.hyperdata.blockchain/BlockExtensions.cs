@@ -32,7 +32,7 @@ namespace nl.hyperdata.blockchain
             byte[] hash = new byte[0];
             int d = difficulty.Length;
 
-            while (!hash.Take(d).SequenceEqual(difficulty))
+            while (!hash.Take(d).SequenceEqual(difficulty) && block.Nonce <= int.MaxValue)
             {
                 block.Nonce++;
                 hash = block.GenerateHash();

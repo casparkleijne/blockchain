@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nl.hyperdata.blockchain", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nl.hyperdata.blockchain.console", "nl.hyperdata.blockchain.console\nl.hyperdata.blockchain.console.csproj", "{69D9E18A-2B10-4D8F-8E5C-038D8D51A65E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nl.hyperdata.blockchain.test", "nl.hyperdata.blockchain.test\nl.hyperdata.blockchain.test.csproj", "{7FEE0AF5-2637-4604-918D-46B6CFBF4161}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{69D9E18A-2B10-4D8F-8E5C-038D8D51A65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69D9E18A-2B10-4D8F-8E5C-038D8D51A65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69D9E18A-2B10-4D8F-8E5C-038D8D51A65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FEE0AF5-2637-4604-918D-46B6CFBF4161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FEE0AF5-2637-4604-918D-46B6CFBF4161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FEE0AF5-2637-4604-918D-46B6CFBF4161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FEE0AF5-2637-4604-918D-46B6CFBF4161}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
