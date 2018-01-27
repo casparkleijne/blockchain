@@ -13,7 +13,6 @@ namespace nl.hyperdata.blockchain
             Difficulty = difficulty;
             genesis.Hash = genesis.MineHash(this.Difficulty);
             Items.Add(genesis);
-
         }
 
         public void Add(IBlock item)

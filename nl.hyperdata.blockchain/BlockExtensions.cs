@@ -26,7 +26,7 @@ namespace nl.hyperdata.blockchain
         {
             if(difficulty == null)
             {
-                throw new ArgumentException("block is null", "block");
+                throw new ArgumentNullException(nameof(difficulty));
             }
 
             byte[] hash = new byte[0];

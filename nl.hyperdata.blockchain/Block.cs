@@ -6,11 +6,7 @@ namespace nl.hyperdata.blockchain
     {
         public Block(byte[] data)
         {
-            if (data == null || data.Length < 1)
-            {
-                throw new ArgumentException("data is to short", "data");
-            }
-            Data = data;
+            Data = data ?? throw new ArgumentNullException(nameof(data));
             Nonce = 0;
             PreviousHash = new byte[] { 0x00 };
             TimeStamp = DateTime.Now;
@@ -28,7 +24,7 @@ namespace nl.hyperdata.blockchain
 
         public override string ToString()
         {
-            return String.Format("{0}:\n:{1}:\n:{2}:\n{3}", BitConverter.ToString(Hash).Replace("-", ""), BitConverter.ToString(PreviousHash).Replace("-", ""), Nonce, TimeStamp);
+            return String.Format("{0}:\n:{1}:\n:{2}:\n{3}\n\r", BitConverter.ToString(Hash).Replace("-", ""), BitConverter.ToString(PreviousHash).Replace("-", ""), Nonce, TimeStamp);
         }
     }
 }
