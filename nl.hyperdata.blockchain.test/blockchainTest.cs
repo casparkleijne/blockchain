@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace nl.hyperdata.blockchain.test
@@ -24,6 +25,17 @@ namespace nl.hyperdata.blockchain.test
         {
             Assert.AreEqual(1, chain.Items.Count);
         }
+
+
+        [TestMethod]
+        public void TestBlockChainNewBlock()
+        {
+            var data = Enumerable.Range(0, 256).Select(x => (byte)random.Next());
+            chain.Add(new Block(data.ToArray()));
+
+            Assert.AreEqual(2, chain.Items.Count);
+        }
+
 
     }
 }
