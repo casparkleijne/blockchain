@@ -18,7 +18,7 @@ usage, as like in a Console application:
       using System;
       using System.Linq;
 
-      namespace ConsoleApp5
+      namespace BlockChainSample
       {
       class Program
       {
